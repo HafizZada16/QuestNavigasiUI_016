@@ -4,6 +4,7 @@ package com.example.questnavigasiui_016.view
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.OutlinedTextField
 import androidx.compose.material3.Scaffold
@@ -18,6 +19,7 @@ import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
 import com.example.questnavigasiui_016.R
+import kotlin.coroutines.coroutineContext
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -42,6 +44,9 @@ fun FormIsian(
                 singleLine = true,
                 modifier = Modifier
                     .padding(top = 20.dp)
+                    .width(250.dp),
+                label = {Text(text = "Nama Lengkap")},
+                onValueChange = { }
 
             )
 
