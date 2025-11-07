@@ -2,7 +2,11 @@ package com.example.questnavigasiui_016.view
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Button
 import com.example.questnavigasiui_016.R
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.HorizontalDivider
@@ -45,11 +49,17 @@ fun TampilData(
                 items.forEach { item ->
                     Column {
                         Text(text = item.first.uppercase(), fontSize = 18.sp)
-                        Text(text = item.second, fontWeight = FontWeight.Bold, fontFamily = FontFamily.Cursive, fontSize = 22.sp)
+                        Text(
+                            text = item.second,
+                            fontWeight = FontWeight.Bold,
+                            fontFamily = FontFamily.Cursive,
+                            fontSize = 22.sp
+                        )
                     }
                     HorizontalDivider(thickness = 1.dp, color = Color.Cyan)
+                }
+                
             }
-        })
-
+        }
     }
 }
