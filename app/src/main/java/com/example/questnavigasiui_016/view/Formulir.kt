@@ -86,7 +86,7 @@ fun FormIsian(
             )
             Spacer(modifier = Modifier.height(30.dp))
             Button(
-                modifier = Modifier.fillMaxWidth(if)
+                modifier = Modifier.fillMaxWidth(1f)
                     .padding(all = 20.dp),
                 onClick = OnSumbitBtnClick
             ){
